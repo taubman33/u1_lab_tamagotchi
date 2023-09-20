@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamagotchi Lab</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="game-title">Tamagotchi Code Along</h1>
+    </header>
+
+    <main class="container">
+      <!-- game interface / UI section -->
+      <section id="controller" class="button-wrapper">
+        <button>play</button>
+        <button>feed</button>
+        <button>sleep</button>
+      </section>
+
+      <!-- game data section -->
+      <section id="stat-display" class="stats-wrapper">
+        <p>Happiness: <span id="boredom-stat">...</span></p>
+        <p>Hunger: <span id="hunger-stat">...</span></p>
+        <p>Tiredness: <span id="sleepiness-stat">...</span></p>
+      </section>
+
+      <!-- game display / messaging section -->
+      <section id="game-state" class="game-state-wrapper">
+        <h2 id="tama-message" class="hidden">
+          Oh no! <span id="message-content">You starved!</span>
+        </h2>
+        <img id="tama-graphic" src="../assets/wolf-1.png" class="game-graphic" />
+        <button id="restart" class="hidden">Play Again</button>
+      </section>
+    </main>
+  </body>
+</html>
